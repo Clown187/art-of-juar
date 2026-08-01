@@ -399,15 +399,17 @@ nav a:hover { background: var(--clay); color: var(--paper); }
   display: block;
   width: 100%;
   border: 0;
-  background: var(--paper);
+  background: var(--concrete);
 }
-/* Tint the embedded (white) Google Form toward the site's paper tone,
-   without touching the iframe itself — cheap, no filter/repaint cost. */
+/* Tint the embedded (white) Google Form toward a darker, muted tone from
+   the site's palette — without touching the iframe itself (cheap, no
+   filter/repaint cost). Kept clear of near-black so the form's own dark
+   text stays readable. */
 .form-frame::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--paper);
+  background: var(--concrete);
   mix-blend-mode: multiply;
   pointer-events: none;
 }
