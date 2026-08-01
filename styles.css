@@ -391,6 +391,7 @@ nav a:hover { background: var(--clay); color: var(--paper); }
 /* Newsletter */
 .newsletter-wrap { max-width: 720px; }
 .form-frame {
+  position: relative;
   border: 2px solid var(--line);
   background: var(--surface);
 }
@@ -399,6 +400,16 @@ nav a:hover { background: var(--clay); color: var(--paper); }
   width: 100%;
   border: 0;
   background: var(--paper);
+}
+/* Tint the embedded (white) Google Form toward the site's paper tone,
+   without touching the iframe itself — cheap, no filter/repaint cost. */
+.form-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--paper);
+  mix-blend-mode: multiply;
+  pointer-events: none;
 }
 
 /* About / Contact */
