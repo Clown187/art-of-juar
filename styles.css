@@ -391,15 +391,15 @@ nav a:hover { background: var(--clay); color: var(--paper); }
 /* Newsletter */
 .newsletter-wrap { max-width: 720px; }
 .form-frame {
-  border: 2px solid var(--ochre);
+  border: 2px solid var(--line);
   background: var(--surface);
-  padding: 4px;
 }
 .form-frame iframe {
   display: block;
+  width: 100%;
   border: 0;
-  background: var(--paper);
-  filter: invert(0);
+  background: var(--surface);
+  filter: invert(0.93) hue-rotate(180deg);
 }
 
 /* About / Contact */
