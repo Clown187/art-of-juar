@@ -398,8 +398,7 @@ nav a:hover { background: var(--clay); color: var(--paper); }
   display: block;
   width: 100%;
   border: 0;
-  background: var(--surface);
-  filter: invert(0.93) hue-rotate(180deg);
+  background: var(--paper);
 }
 
 /* About / Contact */
