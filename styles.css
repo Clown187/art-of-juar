@@ -388,6 +388,20 @@ nav a:hover { background: var(--clay); color: var(--paper); }
 }
 .shop-note a { color: var(--clay); }
 
+/* Newsletter */
+.newsletter-wrap { max-width: 720px; }
+.form-frame {
+  border: 2px solid var(--ochre);
+  background: var(--surface);
+  padding: 4px;
+}
+.form-frame iframe {
+  display: block;
+  border: 0;
+  background: var(--paper);
+  filter: invert(0);
+}
+
 /* About / Contact */
 .about-wrap p, .contact-wrap p {
   max-width: 660px;
