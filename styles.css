@@ -388,6 +388,48 @@ nav a:hover { background: var(--clay); color: var(--paper); }
 }
 .shop-note a { color: var(--clay); }
 
+/* Print Club */
+.print-club-card {
+  border: 2px solid var(--clay);
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.print-club-info h3 {
+  font-size: 1.1rem;
+  margin: 0 0 8px;
+}
+.print-club-info p {
+  margin: 0;
+  max-width: 480px;
+  color: var(--muted);
+}
+.print-club-cta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+.print-club-price {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--paper);
+}
+.print-club-period {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+@media (max-width: 640px) {
+  .print-club-card { flex-direction: column; align-items: flex-start; }
+  .print-club-cta { width: 100%; justify-content: space-between; }
+}
+
 /* Newsletter */
 .newsletter-wrap { max-width: 720px; }
 .form-frame {
