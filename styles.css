@@ -380,6 +380,11 @@ nav a:hover { background: var(--clay); color: var(--paper); }
 }
 .product-card .status-sold { color: var(--pink); }
 .product-card.is-unavailable .art-img { filter: grayscale(0.85) brightness(0.65); opacity: 0.7; }
+.product-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 .shop-note {
   margin-top: 32px;
   color: var(--concrete);
