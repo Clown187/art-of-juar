@@ -104,12 +104,14 @@ a { color: inherit; }
 }
 .logo-words {
   display: flex;
-  align-items: center;
-  gap: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  justify-content: center;
 }
 .logo-words img {
   display: block;
-  height: 16px;
+  height: 13px;
   width: auto;
 }
 nav {
