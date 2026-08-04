@@ -102,6 +102,16 @@ a { color: inherit; }
   object-fit: cover;
   filter: grayscale(1) contrast(1.1);
 }
+.logo-words {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo-words img {
+  display: block;
+  height: 16px;
+  width: auto;
+}
 nav {
   display: flex;
   gap: 0;
